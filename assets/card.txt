@@ -44,7 +44,7 @@ Vomi : \n Le dernier a avoir vomi prends un cul sec
 échappé : \n Si tu n’as jamais fais de soirées chez toi, la prochaine distribution est forcément pour toi
 meuble : \n Le plus ancien de l’école distribue 3 gorgées ou tout le monde boit s’il préfère
 GEIPI : \n S’il y a plus de personnes qui ont fait geipi dans la salle, chacun distribue 1 gorgée sinon, chacun en prend 1
-JPO : \n Si tu as visité l’école avant de venir dedans, distribue 2 gorgées, sinon bois en 2
+JPO : \n Si tu as visité l’école avant de venir dedans, distribue 2 gorgées, sinon bois en 2$
 Pause midi : \n Plutôt RU ou manger son tuper. Les minoritaires prennent 3 gorgées
 Corps enseignants : \n Citez chacun votre tour un nom de prof. Le premier qui se trompe prend 4 gorgées
 feu de l’amour : \n Si tu es déjà sorti avec qqun de l’école, distribue 3 gorgées, sinon prends en 3
