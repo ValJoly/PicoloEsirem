@@ -1,3 +1,4 @@
+import 'package:PicoloEsirem/Game.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -8,6 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _Home extends State<Home> {
+
   List<String> players = new List();
 
   @override
@@ -21,6 +23,14 @@ class _Home extends State<Home> {
       ),
       backgroundColor: Colors.deepPurpleAccent,
       body: Column(children: [
+        Padding(
+          padding: const EdgeInsets.all(12),
+          child: Text(
+            'Swipe to delete a player \n Press \'Enter\' to add one',
+            style: TextStyle(fontSize: 18),
+            textAlign: TextAlign.center,
+          ),
+        ),
         Expanded(
           child: ListView.builder(
             itemCount: players.length,
@@ -82,9 +92,19 @@ class _Home extends State<Home> {
             child: Card(
               color: Colors.transparent,
               child: IconButton(
-                onPressed: null,
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return PicoloGame(players);
+                      },
+                    ),
+                    //'/GamePage'
+                  );
+
+                },
                 icon: Icon(
-                  Icons.check,
+                  Icons.arrow_forward_ios,
                 ),
               ),
             ),
