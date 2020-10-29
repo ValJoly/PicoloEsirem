@@ -21,13 +21,16 @@ class _Home extends State<Home> {
         centerTitle: true,
         elevation: 0,
       ),
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: Colors.grey,
       body: Column(children: [
         Padding(
           padding: const EdgeInsets.all(12),
           child: Text(
             'Swipe to delete a player \n Press \'Enter\' to add one',
-            style: TextStyle(fontSize: 18),
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.white
+            ),
             textAlign: TextAlign.center,
           ),
         ),
@@ -54,13 +57,19 @@ class _Home extends State<Home> {
                   child: Container(
                     width: MediaQuery.of(context).size.width / 1.5,
                     height: MediaQuery.of(context).size.height / 12,
-                    child: Card(
-                    color: Colors.deepPurple,
 
+                    child: Card(
+                    color: Color.fromARGB(255, 160, 0, 0),
+                      elevation: 10,
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide.none,
+                          borderRadius: BorderRadius.circular(MediaQuery.of(context).size.height / 35)
+                      ),
                       child: Text(
                         player,
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: MediaQuery.of(context).size.height / 24,
                         ),
                       ),
@@ -79,9 +88,14 @@ class _Home extends State<Home> {
               });
 
             },
+            style: TextStyle(
+                color: Colors.white
+             ),
             decoration: InputDecoration(
+              fillColor: Color.fromARGB(255, 160, 0, 0),
+              filled: true,
               border: OutlineInputBorder(),
-              labelText: 'Nom',
+              labelText: 'Nom'
             ),
           ),
           width: MediaQuery.of(context).size.width / 2,
@@ -116,28 +130,7 @@ class _Home extends State<Home> {
   }
 
   void addPlayer(String name) {
-    players.add(name
-        /*new Container(
-        child: new Row(
-          children: [
-            new Text(
-              name,
-              style: new TextStyle(
-                  fontSize: MediaQuery.of(context).size.width / 15),
-            ),
-            new IconButton(
-              onPressed: () {
-                print('mange tes morts');
-              },
-              icon: new Icon(
-                Icons.remove_circle,
-              ),
-            )
-          ],
-          mainAxisAlignment: MainAxisAlignment.center,
-        ),
-      ),*/
-        );
-    print("submited");
+    players.add(name);
+    //print("submited");
   }
 }

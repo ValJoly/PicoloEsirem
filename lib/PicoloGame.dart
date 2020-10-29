@@ -25,6 +25,9 @@ class _PicoloGame extends State<PicoloGame> {
   List<String> cards;
 
   _PicoloGame(this.players) {
+    if (players.isEmpty) {
+      players.add("personne");
+    }
     cards = new List();
     turnMax = players.length;
     turn = 0;
@@ -44,13 +47,13 @@ class _PicoloGame extends State<PicoloGame> {
         centerTitle: true,
         elevation: 0,
       ),
-      backgroundColor: Colors.deepPurpleAccent,
+      backgroundColor: Colors.grey,
       body: Column(
         children: [
           Container(
             child: Card(
               child: Text('Au tour de : \n' + players.elementAt(turn),style: TextStyle(fontSize: MediaQuery.of(context).size.height / 30 ) , textAlign: TextAlign.center,),
-              color: Colors.deepPurple,
+              color: Color.fromARGB(255, 160, 0, 0),
             ),
             height: MediaQuery.of(context).size.height / 10,
             width: MediaQuery.of(context).size.width * 3 / 4,
@@ -85,6 +88,7 @@ class _PicoloGame extends State<PicoloGame> {
                             ),
                             textAlign: TextAlign.center,
                           ),
+                          color: Color.fromARGB(255, 160, 0, 0),
                         ),
                         width: MediaQuery.of(context).size.width * 2 / 3,
                         margin: EdgeInsets.only(
