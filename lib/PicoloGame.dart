@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'dart:io';
+import 'dart:async';
+import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
+import 'package:path_provider/path_provider.dart';
 
 class PicoloGame extends StatefulWidget {
 
@@ -19,24 +24,40 @@ class PicoloGame extends StatefulWidget {
 
 class _PicoloGame extends State<PicoloGame> {
 
+  String allCards;
   List<String> players;
   int turnMax;
   int turn;
+  List<String> listsCards;
   List<String> cards;
 
+
+  Future<List<String>> fetchFileData() async {
+    allCards = await rootBundle.loadString('assets/card.txt');
+
+    sleep(const Duration(seconds: 1));
+
+    List<String> tmp = new List();
+    tmp = allCards.split("§");
+
+    return tmp;
+  }
+
   _PicoloGame(this.players) {
+    cards = new List();
+    allCards = "";
     if (players.isEmpty) {
       players.add("personne");
     }
-    cards = new List();
     turnMax = players.length;
     turn = 0;
   }
 
+
   @override
   Widget build(BuildContext context) {
     pickACard();
-    print(players);
+
     return Scaffold(
       appBar: new AppBar(
         title: new Text('Swipe pour la suite'),
@@ -103,16 +124,14 @@ class _PicoloGame extends State<PicoloGame> {
     );
   }
 
-  void pickACard() {
-    if (Random().nextInt(2)  == 1) {
-      cards.add(
-        'chargée de comm : \n Prends une photo avec ts les joueurs avant la fin de la partie, sinon cul sec',
-      );
-    } else {
-      cards.add(
-        'Surleau : \n Tu peux pas regarder ton téléphone pendant la partie, une gorgée à chaque manque',
-      );
-    }
+  void pickACard() async {
+    cards.clear();
+    listsCards = await fetchFileData();
+    int rnd = Random().nextInt(listsCards.length);
+    print(rnd);
+    print(cards);
+
+    cards.add(listsCards.elementAt(rnd).toString());
 
   }
 }

@@ -85,6 +85,7 @@ class _Home extends State<Home> {
             onSubmitted: (String value) {
               setState(() {
                 players.add(value);
+
               });
 
             },
@@ -95,7 +96,8 @@ class _Home extends State<Home> {
               fillColor: Color.fromARGB(255, 160, 0, 0),
               filled: true,
               border: OutlineInputBorder(),
-              labelText: 'Nom'
+              hintText: 'Nom'
+
             ),
           ),
           width: MediaQuery.of(context).size.width / 2,
@@ -117,6 +119,7 @@ class _Home extends State<Home> {
                   );
 
                 },
+
                 icon: Icon(
                   Icons.arrow_forward_ios,
                 ),
@@ -131,6 +134,5 @@ class _Home extends State<Home> {
 
   void addPlayer(String name) {
     players.add(name);
-    //print("submited");
   }
 }
