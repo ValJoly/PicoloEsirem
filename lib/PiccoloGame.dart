@@ -1,41 +1,65 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'dart:async';
+import 'package:flutter/services.dart';
 
-class PicoloGame extends StatefulWidget {
+// ignore: must_be_immutable
+class PiccoloGame extends StatefulWidget {
 
   List<String> param;
-  PicoloGame(List<String> players) {
+  PiccoloGame(List<String> players) {
     param = players;
   }
 
 
   @override
   State<StatefulWidget> createState() {
-    return new _PicoloGame(param);
+    return new _PiccoloGame(param);
   }
 
 
 }
 
-class _PicoloGame extends State<PicoloGame> {
+class _PiccoloGame extends State<PiccoloGame> {
 
   List<String> players;
-  int turnMax;
   int turn;
   List<String> cards;
+  List<String> allCards;
+  String read;
+  bool turn1 = true;
 
-  _PicoloGame(this.players) {
+
+  Future<List<String>> fetchFileData() async {
+    read = await rootBundle.loadString('assets/card.txt');
+
+    allCards = read.split('\n');
+
+    return allCards;
+  }
+
+  _PiccoloGame(this.players) {
     if (players.isEmpty) {
       players.add("personne");
     }
+
+    players.insert(0, " ");
+
+    fetchFileData();
+    print(allCards);
     cards = new List();
-    turnMax = players.length;
     turn = 0;
+
   }
 
   @override
   Widget build(BuildContext context) {
-    pickACard();
+    if (turn1) {
+      cards.add('Roses are red,\nViolet are blue,\nHello les NRV,\nSwipe pour picoler');
+    } else {
+      pickACard();
+    }
+
     print(players);
     return Scaffold(
       appBar: new AppBar(
@@ -47,13 +71,13 @@ class _PicoloGame extends State<PicoloGame> {
         centerTitle: true,
         elevation: 0,
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Color.fromARGB(255, 37, 50, 64),
       body: Column(
         children: [
           Container(
             child: Card(
               child: Text('Au tour de : \n' + players.elementAt(turn),style: TextStyle(fontSize: MediaQuery.of(context).size.height / 30 ) , textAlign: TextAlign.center,),
-              color: Color.fromARGB(255, 160, 0, 0),
+              color: Color.fromARGB(255, 241, 48, 77),
             ),
             height: MediaQuery.of(context).size.height / 10,
             width: MediaQuery.of(context).size.width * 3 / 4,
@@ -67,13 +91,17 @@ class _PicoloGame extends State<PicoloGame> {
                     key: UniqueKey(),
                     onDismissed: (direction) {
                       setState(() {
+                        if (turn1) {
+                          players.removeAt(0);
+                          turn1 = false;
+                        }
                         cards.remove(card);
                         turn++;
-                        turn %= turnMax;
+                        turn %= players.length;
                       });
                       Scaffold.of(context).showSnackBar(
                         SnackBar(
-                          content: Text('Next'),
+                          content: Text('Suivant'),
                           duration: Duration(milliseconds: 500),
                         ),
                       );
@@ -82,13 +110,13 @@ class _PicoloGame extends State<PicoloGame> {
                       child: Container(
                         child: Card(
                           child: Text(
-                            card,
+                            cards.first,
                             style: TextStyle(
                               fontSize: MediaQuery.of(context).size.height / 24,
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          color: Color.fromARGB(255, 160, 0, 0),
+                          color: Color.fromARGB(255, 241, 48, 77),
                         ),
                         width: MediaQuery.of(context).size.width * 2 / 3,
                         margin: EdgeInsets.only(
@@ -104,15 +132,10 @@ class _PicoloGame extends State<PicoloGame> {
   }
 
   void pickACard() {
-    if (Random().nextInt(2)  == 1) {
-      cards.add(
-        'chargée de comm : \n Prends une photo avec ts les joueurs avant la fin de la partie, sinon cul sec',
-      );
-    } else {
-      cards.add(
-        'Surleau : \n Tu peux pas regarder ton téléphone pendant la partie, une gorgée à chaque manque',
-      );
-    }
-
+      cards.clear();
+      int rnd = Random().nextInt(allCards.length);
+      print(rnd);
+      cards.add(allCards.elementAt(rnd));
+      print(cards.length);
   }
 }

@@ -1,4 +1,4 @@
-import 'package:PicoloEsirem/PicoloGame.dart';
+import 'package:PiccoloEsirem/PiccoloGame.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -21,12 +21,12 @@ class _Home extends State<Home> {
         centerTitle: true,
         elevation: 0,
       ),
-      backgroundColor: Colors.grey,
+      backgroundColor: Color.fromARGB(255, 37, 50, 64),
       body: Column(children: [
         Padding(
           padding: const EdgeInsets.all(12),
           child: Text(
-            'Swipe to delete a player \n Press \'Enter\' to add one',
+            'Swipe pour supprimer un joueur \n Valide avec ton clavier pour ajouter le joueur',
             style: TextStyle(
               fontSize: 18,
               color: Colors.white
@@ -47,7 +47,7 @@ class _Home extends State<Home> {
                   });
                   Scaffold.of(context).showSnackBar(
                     SnackBar(
-                      content: Text('remove $player'),
+                      content: Text('On vire $player'),
                       duration: Duration(milliseconds: 500),
                     ),
                   );
@@ -59,7 +59,7 @@ class _Home extends State<Home> {
                     height: MediaQuery.of(context).size.height / 12,
 
                     child: Card(
-                    color: Color.fromARGB(255, 160, 0, 0),
+                    color: Color.fromARGB(255, 241, 48, 77),
                       elevation: 10,
                       shape: RoundedRectangleBorder(
                           side: BorderSide.none,
@@ -92,7 +92,7 @@ class _Home extends State<Home> {
                 color: Colors.white
              ),
             decoration: InputDecoration(
-              fillColor: Color.fromARGB(255, 160, 0, 0),
+              fillColor: Color.fromARGB(255, 241, 48, 77),
               filled: true,
               border: OutlineInputBorder(),
               labelText: 'Nom'
@@ -110,7 +110,7 @@ class _Home extends State<Home> {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (context) {
-                        return PicoloGame(players);
+                        return PiccoloGame(players);
                       },
                     ),
                     //'/GamePage'
@@ -119,6 +119,7 @@ class _Home extends State<Home> {
                 },
                 icon: Icon(
                   Icons.arrow_forward_ios,
+                  color: Color.fromARGB(255, 241, 48, 77),
                 ),
               ),
             ),
@@ -130,7 +131,7 @@ class _Home extends State<Home> {
   }
 
   void addPlayer(String name) {
-    players.add(name);
+      players.add(name);
     //print("submited");
   }
 }
