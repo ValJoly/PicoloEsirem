@@ -1,0 +1,79 @@
+Examen IT Equipe :      Pose une question de son domaine à un autre joueur au choix. Distribue 2 gorgées si bonne réponse, bois les sinon.
+Examen MDD Equipe :       Pose une question de son domaine à un autre joueur au choix. Distribue 2 gorgées si bonne réponse, bois les sinon.
+Examen ROB Equipe :       Pose une question de son domaine à un autre joueur au choix. Distribue 2 gorgées si bonne réponse, bois les sinon.
+Coloc :         Donne le thème du dernier colloque. Si faux, bois 3 gorgées.
+Gala :      Distribue 2 gorgées si déjà participer au spectacle, bois 2 gorgées sinon.
+BDE :       Distribue autant de gorgées que d’évènements participés durant l’année.
+Raid :      Fais 5 pompes et bois entre chaque.
+Rallye :        Bois un cocktail d'entrée fais par ton voisin de droite.
+Esi'up :    Distribue 2 gorgées si tu as déjà participé à l'asso. Bois 2 gorgées sinon.
+Wei :       Chi Fu Mi => Cul-sec en jeu.
+Ski :       Va dans le frigo et mange du fromage ou un truc surgelé.
+Voyage :        Parle anglais pendant les 5 prochaines minutes.
+Directeur :         Immunité pendant les 3 prochaines distributions.
+Pellion :       Raconte une anecdote de merde.
+Directeur de département :      Trouvez un accord pour distribuer un cul-sec, ou prenez le.
+Directeur de département :      Trouvez un accord pour distribuer un cul-sec, ou prenez le.
+Secrétariat :       Tu es le serveur pendant le reste de la partie.
+Promo :         Bois le nombre de gorgées de ton année.
+Tour :      Bois si tu y es déjà allé.
+Gars/Meuf :         Bois le nombre de gorgées du nombre de joueur de ton sexe.
+Matériaux :         Tous les Matériaux distribuent 1 gorgée.
+Infotro :       Tous les Infotro distribuent 1 gorgée.
+Robotique:      Tous les Robotiques distribuent 1 gorgée.
+Avoiné de la gueule :       Le dernier qui gueule 'le machin le truc' prend 3 gorgées.
+Lapinou :       Distribue 4 gorgées.
+Lapinou :       Distribue 4 gorgées.
+Tigrou :        Bois 4 gorgées.
+Tigrou :        Bois 4 gorgées.
+Ferdjani :      Raconte une blague de merde. Bonus: si elle est en anglais, distribue 2 gorgées.
+Chargé.e de comm :       Prend une photo avec tous les joueurs avant la fin de la partie. Sinon cul-sec.
+Kfet :      Gère la musique pendant la partie.
+Pot :       Tout le monde trinque.
+MHF :       Chacun son tour, citez des titres de films. Le premier qui ne trouve pas bois 3 gorgées.
+VBT :       Chacun son tour, citez un personnage de dessin animé. Le premier qui ne trouve pas bois 3 gorgées.
+ESIREMOUS :         On te colle un papier sur le front. A chaque question, 1 gorgée jusqu’à 10 ou trouvé.
+HeroHic :       Annule une distribution.
+D2D :       Tu inventes une nouvelle règle pour la partie.
+GGG :       Chacun son tour, citez un personnage de jeux vidéos. Le premier qui ne trouve pas bois 3 gorgées.
+TTL :       Le joueur qui arrive le plus souvent en retard distribue 4 gorgées.
+ADN :       Pendant les 3 prochains tours, chaque gorgée distribuée te revient.
+NRV:        Tous les joueurs prennent un cul sec.
+T5B :       Si tu participes à un sport du T5B, distribue 3 gorgées sinon bois en 3.
+Travesti :      Echange tes habits avec un joueur du sexe opposé.
+Chef PomPom :       Invente un pas de danse et tout le monde doit le faire sur le prochain dancefloor.
+PomPom :        Fais un enchainement de la dernière danse pompom ou 3 gorgées.
+Salle multi :       Tu gagnes ta place sur le canapé si tu n’es pas dessus pendant la partie.
+WC :        Interdiction d’aller aux toilettes jusqu’à la fin de la partie, sinon cul-sec.
+Surleau :       Tu peux pas regarder ton téléphone pendant la partie, une gorgée à chaque manque.
+Soirée d’inté :         Le joueur qui a déjà eu le plus de personnes chez lui donne 5 gorgées.
+Vomi :      Le dernier a avoir vomi prend un cul-sec.
+Echappé :       Si tu n’as jamais fait de soirée chez toi, la prochaine distribution est forcément pour toi.
+Meuble :        Le plus ancien de l’école distribue 3 gorgées ou tout le monde bois s’il préfère.
+GEIPI :         S’il y a plus de personnes qui ont fait GEIPI dans la salle, chacun distribue 1 gorgée sinon chacun en prend 1.
+JPO :       Si tu as visité l’école avant de venir dedans, distribue 2 gorgées, sinon bois les.
+Pause midi :        Plutôt RU ou manger son tupp' ? Les minoritaires prennent 3 gorgées.
+Corps enseignants :         Citez chacun votre tour un nom de prof. Le premier qui se trompe prend 4 gorgées.
+Feu de l’amour :        Si tu es déjà sorti avec quelqu'un de l’école, distribue 3 gorgées, sinon prends en 3.
+Camp adverse : 		Si t'es déjà sorti.e avec un.e agrosup, prends 3 gorgées, sinon distribue en 3.
+Grosse merde :      Si tu as déjà minoré une matière, bois 5 gorgées.
+Major :         Si tu as déjà majoré un exam’, tu distribues un cul-sec.
+Claque le :         Tu défies le dernier qui a bu au claque le. Celui qui perd prend 3 gorgées.
+Salaun/Marquie :        Partage toutes les gorgées jusqu’à la fin de la partie.
+Buffalo :       Pendant le reste de la soirée, tu participes au Buffalo. Si c'est déjà le cas, distribue 1 cul-sec.
+La chasse à l'ours :    Entame une chasse à l'ours.
+BDA :       Le joueur de droite te propose une chanson que tu dois chanter au karaoké. Si tu refuses, tu bois 5 gorgées.
+BDS :       Pendant les 5 prochains tours, met toi debout. A chaque fois que quelqu'un prend une gorgée, fais un squat.
+Back-draft :        Fais un back-draft. Si ça fait moins d'un mois que tu en as fait un, choisis un joueur pour le faire à ta place.
+Saupoudrage :          3/4 Ricard + 1/4 Get. S'il te manque un ingrédient, prend un cul-sec.
+Limousin :        Tu vas nous danser la danse du Limousin, tu vas nous danser la danse du Li-Mou-Sin...
+Cri de guerre :     Lance le cri de guerre de l'ESIREM. 
+ESIREM :        Jusqu’à la fin de la partie, chaque fois que tu prononces le mot 'ESIREM' tu prends une gorgée.
+Pickle Back :       1 shot de vinaigre de cornichon + 1 shot de sky. S'il te manque un ingrédient, finis ton verre.
+Fetard :        Chacun à votre tour, donnez la date de votre dernière soirée (sans compter celle-ci). Celui qui donne la date la plus proche distribue 4 gorgées.
+Pain au chocolat ou chocolatine ? :         Faites un vote. Les minoritaires boivent 3 gorgées.
+International :         Si tu as des origines Internationales, parle dans ta langue pendant 5 min.
+Stage :             Raconte ta pire expérience pro.
+Voyage : 	Chacun cite un pays d'Europe, le premier qui ne trouve pas ou se trompe boit 1 gorgée.
+Kfet :		Bois 2 gorgées si t'as bu au moins 2 cafés aujourd'hui.
+Ella elle l'a : 	Lancez un Ella elle l'a.
