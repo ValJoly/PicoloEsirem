@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
 
 class _Home extends State<Home> {
 
-  List<String> players = new List();
+  List<String> players = [];
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class _Home extends State<Home> {
                   setState(() {
                     players.remove(player);
                   });
-                  Scaffold.of(context).showSnackBar(
+                  ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('On vire $player'),
                       duration: Duration(milliseconds: 500),
